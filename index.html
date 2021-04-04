@@ -1,0 +1,381 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name = "description" content = "The purpose of this project is to summarize the benefits of facebook ad lead pages">
+     <meta name = "keywords" content = "HTML,CSS,JAVASCRIPT">
+     <meta name = "author" content = "Saleh Imtiaz">
+     <link rel  = "shortcut icon" href="favicon.jpg">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+     <title>Facebook LeadPages Landing page</title>
+ </head>
+ <body>
+     <style>
+       body{
+         overflow-x:hidden;
+       }
+          :root {
+  --f-color: #10ac84;
+}
+#scroll {
+  width: 100%;
+  height: 10px;
+  background: #ee5253;
+  position: fixed;
+  top: 0;
+}
+#scroll-indicator {
+  width: 0%;
+  height: 10px;
+  background: #5f27cd;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Recursive", sans-serif;
+}
+.navbar {
+  background: var(--f-color);
+
+  padding: 1.5rem;
+  color: #ffff;
+}
+
+.navbar a {
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 10rem;
+  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.navbar p {
+  float: right;
+  margin-right: 5rem;
+  background: #fbc531;
+  padding: 0.5rem;
+  margin-top: -0.2rem;
+}
+.navbar p:hover {
+  background: #ff9f43;
+}
+.content {
+  padding: 3rem;
+  line-height: 4rem;
+}
+.content p {
+  font-size: 1.5rem;
+}
+.content h1 {
+  width: 260px;
+  text-transform: uppercase;
+  color: var(--f-color);
+
+  font-style: italic;
+}
+.content h2 {
+  color: #10ac84;
+}
+.content h5 {
+  font-size: 1.5rem;
+}
+.content button {
+  padding: 0.9rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background: var(--f-color);
+
+  border: none;
+  color: #ffff;
+}
+.content button:hover {
+  background: #5f27cd;
+}
+.bg {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #48dbfb;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+
+  height: 100vh;
+}
+.bg img {
+  padding: 3rem;
+}
+.content2 {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  line-height: 3.5rem;
+  padding: 1.5rem;
+}
+.content2 h1 {
+  font-size: 2rem;
+  color: var(--f-color);
+}
+.content2 p {
+  font-size: 1.6rem;
+}
+.content2 h5 {
+  font-size: 1.1rem;
+  color: black;
+  font-style: italic;
+}
+.content2 button {
+  background: var(--f-color);
+
+  width: 200px;
+  margin: auto;
+  padding: 0.9rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border: none;
+  color: #ffff;
+}
+.content2 button:hover {
+  background: hsl(260, 68%, 48%);
+}
+.content3 {
+  text-align: center;
+  padding: 2rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  color: var(--f-color);
+
+  font-weight: 700;
+}
+.content3 p {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--f-color);
+}
+
+/* .images{
+                 width:770px;
+                 column-count: 2;
+                 margin:3rem;
+                }     
+              .images p,h4{
+                  line-height:1.3rem;
+                  position: relative;
+                  left:-70%;
+               }
+               .images2{
+                   width:470px;
+               } */
+
+.hi {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  margin-left: 18rem;
+  line-height: 2rem;
+  gap: 20px;
+}
+.images {
+  width: 435px;
+}
+.images2 {
+  width: 430px;
+}
+.bio {
+  background-color: #48dbfb;
+  background-image: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+  height: 100vh;
+}
+
+.bio img {
+  border-radius: 100%;
+}
+.countdown {
+  text-align: center;
+  padding: 2rem;
+  line-height: 5rem;
+}
+#demo {
+  font-size: 3rem;
+  border: 3px solid green;
+  width: 400px;
+  margin: auto;
+  background: var(--f-color);
+
+  padding: 0.5rem;
+}
+.countdown button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 1rem;
+  background: var(--f-color);
+  color: #ffff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.countdown button:hover {
+  background: #0abde3;
+}
+.copyright {
+  background: #10ac84;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+}
+span {
+  text-decoration: underline;
+}
+
+ @media(max-width:965px){
+   body{
+     overflow-x:hidden;
+   }
+    .container{
+      column-count:1;
+   }
+   .navbar{
+     padding:4rem;
+     width:500vw;
+    }
+   .navbar a{
+     margin-left:2rem;
+     line-height:5rem;
+     }
+     .navbar p{
+       margin-right:100rem;
+       width:300px;
+     }
+   .bg{
+     width:500vw;
+     height:150vh;
+     
+    }
+    .image img{
+      position:absolute;
+      top:122%;
+      left:-7%;
+      width:450px;
+      }
+      .hi{
+        margin:auto;
+        position: relative;
+        right:-5%;
+        width:auto;
+        padding:5rem;
+        word-spacing: 4px;
+        text-align:inherit;
+         display: grid;
+        grid-template-columns: 1fr;
+         }
+          .images{
+           margin-left:-5rem;
+         }
+         .images img{
+           margin-left:8rem;
+         }
+         .images2{
+           margin-left:-5rem;
+         }
+         .images2 img{
+           margin-left:8rem;
+         }
+         .countdown{
+           margin-left:-29rem;
+         }
+         .content h5{
+           margin-left:-2.6rem;
+         }
+         .content3 h1{
+           margin-left:1rem;
+           width:300px;
+         }
+         .content3 p{
+           margin-left:1rem;
+           width:310px;
+         }
+         .bio{
+           width:890px;
+           height:auto;
+          }
+          .copyright p{
+            margin-left:-29rem;
+            
+          }
+           
+ }
+
+    
+
+     </style>
+  
+  <div class = "container">
+    <div id = "scroll">
+       <div id = "scroll-indicator">
+       </div>
+    </div>
+    <div class = "navbar">
+       <a href = "#" title = "facebook">Leadpages</a>
+       <p>I Want Better Facebook results!</p>
+    </div>
+    <div class = "bg">
+       <div class = "content">
+          <p>Free Online Training</p>
+          <H1>Launch your Lead-Gen Campaign in Under 5 Minutes</H1>
+          <h2>Facebook ADS. Simplified</h2>
+          <h5>Wednesday,May 18th @3 p.m. EDT</h5>
+          <button>Save My Spot!</button>
+       </div>
+       <div class = "image">
+          <img src = "fb3.jpg" alt="fb">
+       </div>
+    </div>
+    <div class = "part2">
+       <div class = "content2">
+          <h1>Overcome your Overwhelm</h1>
+          <p>& finally succeeded with facebook advertising </p>
+          <h5>During this free training,you'll discover how to</h5>
+          <p><i class="fa fa-check-circle" style="font-size:24px;color:#10ac84"></i>&nbsp;
+             Quickly create high-converting Facebook ads & landing pages
+          </p>
+          <p><i class="fa fa-check-circle" style="font-size:24px;color:#10ac84"></i>&nbsp;Easily determine if your ad is working</p>
+          <p><i class="fa fa-check-circle" style="font-size:24px;color:#10ac84"></i>&nbsp;Spend your budget wisely & confidently</p>
+          <p><i class="fa fa-check-circle" style="font-size:24px;color:#10ac84"></i>&nbsp;Take advantage of sophisticated audience targeting(made simple)</p>
+          <p><i class="fa fa-check-circle" style="font-size:24px;color:#10ac84"></i>&nbsp;Seamiessly copy & customize campaigns to micro-target audiences</p>
+          <button>Save my Spot!</button>
+       </div>
+    </div>
+    <div class ="bio">
+       <div class = "content3">
+          <h1>Join Other Small Business Owners</h1>
+          <p>Who have succeeded with this game-changing tool</p>
+       </div>
+       <div class = "hi">
+          <div class = "images">
+             <img src = "bm1.jpg" alt="bm1">
+             <p>"I have to say,this was the most seemless Facebook ad I've ever done.It was very<br> user-friendly.I liked how it was focused<br> down on the basics and it was very<br> clear - there weren't a lot of other<br> distractions.It led to the best campaign<br> I've ever done with Facebook".</p>
+             <h4>Tom Harry</h4>
+             <p>Eating Psychology Coach Tomharry.com</p>
+          </div>
+          <div class = "images2">
+             <img src = "bm2.jpg" alt="bm2">
+             <p>"I'm quite hapy with the Facebook Ad<br> Builder and I like the Leadpages product.<br>It's very useful to make and make adjustments.I've actually started replacing<br> some of my website pages with Leadpages".</p>
+             <h4>Tom Johnson</h4>
+             <p>Vice President Sales and Marketing ABTECH Technologies</p>
+          </div>
+       </div>
+       <div class = "countdown">
+          <h1>Time Left</h1>
+          <p id = "demo"></p>
+          <button>Save my Spot!</button>
+       </div>
+       <div class = "copyright">
+          <p>@ 2018 All Rights Reserved.<span>Start a free trial of <br>leadpages  |  Privacy Policy</span></p>
+       </div>
+    </div>
+            <script src = "fb.js"></script>
+    </body>
+ </html>
